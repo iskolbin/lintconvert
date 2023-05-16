@@ -2,7 +2,7 @@ package = "intconvert"
 version = "1.0-0"
 source = {
    url = "git://github.com/iskolbin/lintconvert",
-	 tag = "v1.0.0",
+	 tag = "v1.0-0",
 }
 description = {
    summary = "Pure Lua integer encoder/decoder",
