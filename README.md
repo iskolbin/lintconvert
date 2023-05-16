@@ -17,21 +17,21 @@ assert(encoded == decoded)
 
 intconvert.encode(num, base = 10, encoder = DEFAULT)
 ----------------------------------------------------
-Encodes `num` number using `encoder` table with `base`. By default uses table which
+Encodes `num` number and returns string using `encoder` table with `base`. By default uses table which
 supports base up to 62.
 
 intconvert.decode(str, base = 10, decoder = DEFAULT)
 ----------------------------------------------------
-Decodes `str` number using `decoder` table with `base`. By default uses table which
-supports base up to 62.
+Decodes `str` string as number using `decoder` table with `base`. By default uses table which supports
+base up to 62.
 
 intconvert.makeencoder(symbols)
 -------------------------------
-Make encoding table from `symbols` which is string or array.
+Make encoding table from `symbols` which is string or array (only single-character ASCII are supported).
 
 intconvert.makedecoder(symbols)
 -------------------------------
-Make decoding table from `symbols` which is string or array.
+Make decoding table from `symbols` which is string or array (only single-character ASCII are supported).
 
 Install
 -------
