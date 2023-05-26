@@ -11,7 +11,7 @@ Pure Lua integer encoder/decoder for arbitrary bases. Works with Lua 5.1+ and Lu
 local intconvert = require'intconvert'
 local v = 28489299
 local encoded = intconvert.encode(v, 47) -- 5DiHe, default encoder supports base up to 62
-local decoded = intconvert.decode(converted, 47)
+local decoded = intconvert.decode(encoded, 47)
 assert(v == decoded)
 ```
 
