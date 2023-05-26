@@ -12,7 +12,7 @@ local intconvert = require'intconvert'
 local v = 28489299
 local encoded = intconvert.encode(v, 47) -- 5DiHe, default encoder supports base up to 62
 local decoded = intconvert.decode(converted, 47)
-assert(encoded == decoded)
+assert(v == decoded)
 ```
 
 intconvert.encode(num, base = 10, encoder = DEFAULT)
